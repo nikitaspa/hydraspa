@@ -2,8 +2,11 @@
 
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { ArrowRight, ChevronsDown, Diamond } from 'lucide-react';
+import { useGlobalContext } from '../../context/GlobalContext';
 
 export default function ServicesPage() {
+  const { setIsBookingOpen, setPresetServiceId, setPresetPrice } = useGlobalContext();
   useEffect(() => {
     // Simple scroll reveal animation
     const observerOptions = {
@@ -34,7 +37,7 @@ export default function ServicesPage() {
           <p className="max-w-2xl mx-auto font-body-lg text-body-lg text-mist-silver opacity-80">Indulge in a curated selection of ancient healing traditions and modern hydro-therapy rituals designed for the ultimate rejuvenation.</p>
         </div>
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-          <span className="material-symbols-outlined text-gold-metallic text-4xl">keyboard_double_arrow_down</span>
+          <ChevronsDown className="text-gold-metallic" size={40} />
         </div>
       </header>
 
@@ -65,19 +68,28 @@ export default function ServicesPage() {
             </div>
             <div className="space-y-4 mb-12">
               <div className="flex items-center gap-4 text-silk-beige">
-                <span className="material-symbols-outlined text-gold-metallic" style={{ fontVariationSettings: "'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24" }}>diamond</span>
+                <Diamond className="text-gold-metallic" size={20} />
                 <span>Full Body Mineral Scrub &amp; Wrap</span>
               </div>
               <div className="flex items-center gap-4 text-silk-beige">
-                <span className="material-symbols-outlined text-gold-metallic" style={{ fontVariationSettings: "'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24" }}>diamond</span>
+                <Diamond className="text-gold-metallic" size={20} />
                 <span>Deep Tissue Fusion Massage</span>
               </div>
               <div className="flex items-center gap-4 text-silk-beige">
-                <span className="material-symbols-outlined text-gold-metallic" style={{ fontVariationSettings: "'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24" }}>diamond</span>
+                <Diamond className="text-gold-metallic" size={20} />
                 <span>Private Hydro-Oxygen Bath</span>
               </div>
             </div>
-            <button className="gold-btn-gradient text-obsidian-deep px-12 py-4 font-label-caps text-label-caps font-extrabold tracking-widest hover:shadow-[0_0_30px_rgba(212,175,55,0.4)] transition-all">RESERVE EXPERIENCE</button>
+            <button 
+              onClick={() => {
+                setPresetServiceId('signature-hydra-therapy');
+                setPresetPrice(350);
+                setIsBookingOpen(true);
+              }}
+              className="gold-btn-gradient text-obsidian-deep px-12 py-4 font-label-caps text-label-caps font-extrabold tracking-widest hover:shadow-[0_0_30px_rgba(212,175,55,0.4)] transition-all"
+            >
+              RESERVE EXPERIENCE
+            </button>
           </div>
         </div>
       </section>
@@ -108,9 +120,16 @@ export default function ServicesPage() {
                 <p className="text-mist-silver mb-6 flex-grow">Classic long-stroke massage designed to increase oxygen levels in the blood and decrease muscle toxins.</p>
                 <div className="flex justify-between items-center mt-6">
                   <span className="text-silk-beige font-semibold">From ₹120</span>
-                  <Link href="#" className="text-gold-metallic font-label-caps text-label-caps flex items-center gap-2 group-hover:gap-4 transition-all">
-                    BOOK NOW <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24" }}>arrow_forward</span>
-                  </Link>
+                  <button 
+                    onClick={() => {
+                      setPresetServiceId('swedish-massage');
+                      setPresetPrice(120);
+                      setIsBookingOpen(true);
+                    }}
+                    className="text-gold-metallic font-label-caps text-label-caps flex items-center gap-2 group-hover:gap-4 transition-all"
+                  >
+                    BOOK NOW <ArrowRight size={14} />
+                  </button>
                 </div>
               </div>
             </div>
@@ -132,9 +151,16 @@ export default function ServicesPage() {
                 <p className="text-mist-silver mb-6 flex-grow">Targeted therapy for chronic muscle tension using slow, deliberate strokes to reach deeper layers of fascia.</p>
                 <div className="flex justify-between items-center mt-6">
                   <span className="text-silk-beige font-semibold">From ₹160</span>
-                  <Link href="#" className="text-gold-metallic font-label-caps text-label-caps flex items-center gap-2 group-hover:gap-4 transition-all">
-                    BOOK NOW <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24" }}>arrow_forward</span>
-                  </Link>
+                  <button 
+                    onClick={() => {
+                      setPresetServiceId('deep-tissue');
+                      setPresetPrice(160);
+                      setIsBookingOpen(true);
+                    }}
+                    className="text-gold-metallic font-label-caps text-label-caps flex items-center gap-2 group-hover:gap-4 transition-all"
+                  >
+                    BOOK NOW <ArrowRight size={14} />
+                  </button>
                 </div>
               </div>
             </div>
@@ -156,9 +182,16 @@ export default function ServicesPage() {
                 <p className="text-mist-silver mb-6 flex-grow">A full-body, deep-tissue, holistic treatment using a combination of gentle stretches, acupressure, and aromatherapy.</p>
                 <div className="flex justify-between items-center mt-6">
                   <span className="text-silk-beige font-semibold">From ₹145</span>
-                  <Link href="#" className="text-gold-metallic font-label-caps text-label-caps flex items-center gap-2 group-hover:gap-4 transition-all">
-                    BOOK NOW <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24" }}>arrow_forward</span>
-                  </Link>
+                  <button 
+                    onClick={() => {
+                      setPresetServiceId('aromatherapy');
+                      setPresetPrice(145);
+                      setIsBookingOpen(true);
+                    }}
+                    className="text-gold-metallic font-label-caps text-label-caps flex items-center gap-2 group-hover:gap-4 transition-all"
+                  >
+                    BOOK NOW <ArrowRight size={14} />
+                  </button>
                 </div>
               </div>
             </div>
@@ -180,9 +213,16 @@ export default function ServicesPage() {
                 <p className="text-mist-silver mb-6 flex-grow">A sensory journey using highly concentrated plant oils to enhance physical and emotional well-being.</p>
                 <div className="flex justify-between items-center mt-6">
                   <span className="text-silk-beige font-semibold">From ₹130</span>
-                  <Link href="#" className="text-gold-metallic font-label-caps text-label-caps flex items-center gap-2 group-hover:gap-4 transition-all">
-                    BOOK NOW <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24" }}>arrow_forward</span>
-                  </Link>
+                  <button 
+                    onClick={() => {
+                      setPresetServiceId('reflexology');
+                      setPresetPrice(130);
+                      setIsBookingOpen(true);
+                    }}
+                    className="text-gold-metallic font-label-caps text-label-caps flex items-center gap-2 group-hover:gap-4 transition-all"
+                  >
+                    BOOK NOW <ArrowRight size={14} />
+                  </button>
                 </div>
               </div>
             </div>
@@ -204,9 +244,16 @@ export default function ServicesPage() {
                 <p className="text-mist-silver mb-6 flex-grow">An ancient healing system combining acupressure, Indian Ayurvedic principles, and assisted yoga postures.</p>
                 <div className="flex justify-between items-center mt-6">
                   <span className="text-silk-beige font-semibold">From ₹155</span>
-                  <Link href="#" className="text-gold-metallic font-label-caps text-label-caps flex items-center gap-2 group-hover:gap-4 transition-all">
-                    BOOK NOW <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24" }}>arrow_forward</span>
-                  </Link>
+                  <button 
+                    onClick={() => {
+                      setPresetServiceId('hot-stone');
+                      setPresetPrice(155);
+                      setIsBookingOpen(true);
+                    }}
+                    className="text-gold-metallic font-label-caps text-label-caps flex items-center gap-2 group-hover:gap-4 transition-all"
+                  >
+                    BOOK NOW <ArrowRight size={14} />
+                  </button>
                 </div>
               </div>
             </div>
@@ -228,9 +275,16 @@ export default function ServicesPage() {
                 <p className="text-mist-silver mb-6 flex-grow">Heated basalt stones placed on key energy points to melt away tension and balance the body's spirit.</p>
                 <div className="flex justify-between items-center mt-6">
                   <span className="text-silk-beige font-semibold">From ₹180</span>
-                  <Link href="#" className="text-gold-metallic font-label-caps text-label-caps flex items-center gap-2 group-hover:gap-4 transition-all">
-                    BOOK NOW <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24" }}>arrow_forward</span>
-                  </Link>
+                  <button 
+                    onClick={() => {
+                      setPresetServiceId('couples-retreat');
+                      setPresetPrice(180);
+                      setIsBookingOpen(true);
+                    }}
+                    className="text-gold-metallic font-label-caps text-label-caps flex items-center gap-2 group-hover:gap-4 transition-all"
+                  >
+                    BOOK NOW <ArrowRight size={14} />
+                  </button>
                 </div>
               </div>
             </div>

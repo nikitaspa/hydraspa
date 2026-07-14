@@ -82,12 +82,12 @@ export default function ClientLayoutWrapper({ children }: { children: React.Reac
     <GlobalProvider>
       <div className="min-h-screen bg-obsidian-deep text-silk-beige selection:bg-gold-metallic selection:text-obsidian-deep flex flex-col font-body">
         <Header />
-        <main className="flex-grow pt-16">
+        <main className="flex-grow">
           {children}
         </main>
         <Footer />
         <GlobalModals />
-        
+
         {/* Floating Action Buttons */}
         <div className="fixed bottom-6 right-6 flex flex-col gap-4 z-50">
           <a

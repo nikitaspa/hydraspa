@@ -31,11 +31,11 @@ export default function App() {
   const [currentHeroSlide, setCurrentHeroSlide] = useState(0);
 
   const heroImages = [
-    "/images/optimized_v2_1.webp",
-    "/images/optimized_v2_6.webp",
-    "/images/optimized_v2_7.webp",
-    "/images/optimized_v2_8.webp",
-    "/images/optimized_v2_9.webp"
+    "/images/hero_slider_1_1784047848510.png",
+    "/images/hero_slider_2_1784047860616.png",
+    "/images/hero_slider_3_1784047870375.png",
+    "/images/hero_slider_4_1784047882484.png",
+    "/images/hero_slider_5_1784047894239.png"
   ];
 
   // Auto-playing hero slider

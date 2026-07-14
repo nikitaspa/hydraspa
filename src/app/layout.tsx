@@ -5,6 +5,9 @@ import ClientLayoutWrapper from '../components/ClientLayoutWrapper';
 export const metadata: Metadata = {
   title: 'Hydra Spa',
   description: 'Ultra-premium quiet luxury wellness spa in Gachibowli, Hyderabad, featuring bespoke Balinese, Swedish, and Aromatherapy treatments.',
+  icons: {
+    icon: '/logo.jpg',
+  },
 };
 
 export default function RootLayout({

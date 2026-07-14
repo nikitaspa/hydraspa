@@ -29,11 +29,11 @@ export default function Footer() {
             </p>
             <p className="flex items-center gap-3 hover:text-gold-metallic transition-colors cursor-pointer">
               <Mail size={16} className="text-gold-metallic" />
-              <span>concierge@hydraspa.in</span>
+              <span>service@hydraspa.in</span>
             </p>
             <p className="flex items-start gap-3 hover:text-gold-metallic transition-colors">
               <MapPin size={16} className="text-gold-metallic flex-shrink-0 mt-1" />
-              <span>Plot 42, Jubilee Enclave,<br />Madhapur, Hyderabad 500081</span>
+              <span>3rd Floor, Sri Tirumala Platinum,<br />Janardana Hills, Lumbini Avenue,<br />Gachibowli, Hyderabad, Telangana 500032</span>
             </p>
           </div>
         </div>
@@ -53,12 +53,8 @@ export default function Footer() {
           <h4 className="font-headline text-lg text-silk-beige mb-6 tracking-widest uppercase font-semibold">Hours</h4>
           <div className="space-y-3 text-sm font-light">
             <div className="flex justify-between border-b border-white/10 pb-2">
-              <span>Mon - Fri</span>
-              <span className="text-gold-metallic">10:00 AM - 9:00 PM</span>
-            </div>
-            <div className="flex justify-between border-b border-white/10 pb-2">
-              <span>Sat - Sun</span>
-              <span className="text-gold-metallic">9:00 AM - 10:00 PM</span>
+              <span>Mon - Sun</span>
+              <span className="text-gold-metallic">Open 24 Hours</span>
             </div>
             <p className="pt-2 text-xs text-mist-silver/70 italic">* Prior reservation mandatory for weekend slots.</p>
           </div>

@@ -64,6 +64,38 @@ export const TREATMENTS: Treatment[] = [
       'Alleviates chronic back and shoulder stiffness'
     ],
     recommendedFor: 'Highly recommended for athletes and those experiencing rigorous muscle stiffness.'
+  },
+  {
+    id: 'himalayan-salt-stone',
+    name: 'Himalayan Salt Stone Therapy',
+    duration: '75 Min',
+    price: 4599,
+    description: 'A deeply detoxifying massage using heated, hand-carved Himalayan salt stones. Infuses the body with 84 essential minerals while melting away tension.',
+    category: 'massage',
+    image: '/images/optimized_v2_10.webp',
+    benefits: [
+      'Replenishes essential minerals in the body',
+      'Reduces inflammation and soothes sore muscles',
+      'Lightly exfoliates the skin for a radiant glow',
+      'Balances the central nervous system'
+    ],
+    recommendedFor: 'Perfect for detoxification, deep relaxation, and restoring mineral balance.'
+  },
+  {
+    id: 'hydra-signature-facial',
+    name: 'Hydra Signature Facial',
+    duration: '60 Min',
+    price: 4999,
+    description: 'Our bespoke luxury facial combining gentle enzymatic exfoliation, botanical infusions, and advanced lymphatic drainage for an unmatched glow.',
+    category: 'ritual',
+    image: '/images/optimized_v2_11.webp',
+    benefits: [
+      'Deeply hydrates and plumps the skin',
+      'Reduces the appearance of fine lines and fatigue',
+      'Stimulates collagen production naturally',
+      'Improves facial contour through lymphatic massage'
+    ],
+    recommendedFor: 'Ideal for all skin types seeking a radiant, youthful, and lifted appearance.'
   }
 ];
 
