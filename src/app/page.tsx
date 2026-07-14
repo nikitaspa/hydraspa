@@ -407,7 +407,7 @@ export default function App() {
         </section>
 
         {/* WHY CHOOSE US (THE HYDRA STANDARD) */}
-        <section className="py-24 px-6 md:px-12 max-w-7xl mx-auto">
+        <section id="why-choose-us" className="py-24 px-6 md:px-12 max-w-7xl mx-auto">
           <div className="text-center space-y-3 mb-16">
             <span className="text-xs uppercase tracking-[0.2rem] text-gold-metallic font-semibold">The Hydra Standard</span>
             <h2 className="font-headline text-3xl md:text-5xl text-silk-beige">Why We are the Best Spa in Gachibowli</h2>
@@ -654,7 +654,7 @@ export default function App() {
         </section>
 
         {/* EXPANDABLE ELEGANT FAQS ACCORDION */}
-        <section className="py-24 bg-surface-container-lowest/30 border-y border-white/5">
+        <section id="faq-section" className="py-24 bg-surface-container-lowest/30 border-y border-white/5">
           <div className="max-w-3xl mx-auto px-6">
             <div className="text-center space-y-3 mb-16">
               <span className="text-xs uppercase tracking-[0.2rem] text-gold-metallic font-semibold flex items-center justify-center gap-1">
@@ -704,7 +704,7 @@ export default function App() {
         </section>
 
         {/* CONTACT & DIRECT NEWSLETTER FORMS */}
-        <section className="py-24 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-16">
+        <section id="contact-info" className="py-24 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-16">
           
           {/* Left Side: Concierge Location & Inquiry */}
           <div className="lg:col-span-7 space-y-8">
@@ -824,7 +824,7 @@ export default function App() {
         </section>
 
         {/* FINAL SERENITY CALL TO ACTION */}
-        <section className="py-24 bg-surface-container-lowest text-center relative border-t border-white/5 overflow-hidden">
+        <section id="newsletter-cta" className="py-24 bg-surface-container-lowest text-center relative border-t border-white/5 overflow-hidden">
           <div className="absolute inset-0 bg-gold-metallic/5 blur-3xl rounded-full -z-10" />
           
           <div className="max-w-2xl mx-auto px-6 space-y-6">

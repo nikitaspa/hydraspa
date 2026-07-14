@@ -1,0 +1,14 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Visual Journey | Inside Hydra Spa Gachibowli',
+  description: 'Take a visual tour of Hydra Spa\'s stunning interiors. View our serene massage rooms, hydro-basins, and couples suites designed for maximum tranquility.',
+};
+
+export default function GalleryLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return <>{children}</>;
+}

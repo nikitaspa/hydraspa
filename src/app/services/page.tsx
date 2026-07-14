@@ -42,7 +42,7 @@ export default function ServicesPage() {
       </header>
 
       {/* Signature Hydra Therapy Highlight */}
-      <section className="py-32 px-6 md:px-20 max-w-[1440px] mx-auto overflow-hidden">
+      <section id="signature-therapy" className="py-32 px-6 md:px-20 max-w-[1440px] mx-auto overflow-hidden">
         <div className="flex flex-col lg:flex-row gap-20 items-center">
           <div className="w-full lg:w-1/2 relative group">
             <div className="absolute -inset-4 border border-gold-metallic/20 translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-700"></div>
@@ -95,7 +95,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Services Grid */}
-      <section className="py-32 bg-surface-container-lowest">
+      <section id="spa-collection" className="py-32 bg-surface-container-lowest">
         <div className="max-w-[1440px] mx-auto px-6 md:px-20">
           <div className="text-center mb-24">
             <h2 className="font-headline-lg text-headline-lg text-silk-beige mb-4">The Spa Collection</h2>
@@ -294,7 +294,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Couple Spa Section */}
-      <section className="py-32 relative overflow-hidden bg-obsidian-deep">
+      <section id="booking-cta" className="py-32 relative overflow-hidden bg-obsidian-deep">
         <div className="absolute inset-0 z-0 opacity-20"></div>
         <div className="relative z-10 max-w-[1440px] mx-auto px-6 md:px-20">
           <div className="flex flex-col lg:flex-row-reverse items-center gap-20">
@@ -336,7 +336,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Additional Services Grid */}
-      <section className="py-32 px-6 md:px-20 max-w-[1440px] mx-auto">
+      <section id="faq" className="py-32 px-6 md:px-20 max-w-[1440px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-8 h-auto md:h-[800px]">
           
           {/* Body Scrub */}
@@ -387,7 +387,7 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-32 text-center bg-silk-beige text-obsidian-deep">
+      <section id="contact-banner" className="py-32 text-center bg-silk-beige text-obsidian-deep">
         <div className="max-w-3xl mx-auto px-6">
           <span className="font-label-caps text-label-caps tracking-widest mb-6 block text-charcoal-rich">READY FOR RENEWAL?</span>
           <h2 className="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-10 italic">Your sanctuary awaits.</h2>

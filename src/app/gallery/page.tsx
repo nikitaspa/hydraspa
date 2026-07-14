@@ -88,7 +88,7 @@ export default function GalleryPage() {
   return (
     <>
       {/* GALLERY HERO */}
-      <section className="max-w-5xl mx-auto px-6 mb-24 text-center mt-12">
+      <section id="gallery-hero" className="max-w-5xl mx-auto px-6 mb-24 text-center mt-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -146,7 +146,7 @@ export default function GalleryPage() {
       </section>
 
       {/* MASONRY GALLERY GRID */}
-      <section className="max-w-7xl mx-auto px-6 pb-32">
+      <section id="gallery-grid" className="max-w-7xl mx-auto px-6 pb-32">
         <motion.div
           layout
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
@@ -188,7 +188,7 @@ export default function GalleryPage() {
       </section>
 
       {/* EXPERIENCE CALL TO ACTION */}
-      <section className="relative h-[600px] flex items-center justify-center overflow-hidden border-t border-white/10">
+      <section id="gallery-cta" className="relative h-[600px] flex items-center justify-center overflow-hidden border-t border-white/10">
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/optimized_v2_17.webp"

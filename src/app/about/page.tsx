@@ -13,7 +13,7 @@ export default function AboutPage() {
     <div className="bg-obsidian-deep min-h-screen pt-24 pb-12 overflow-hidden">
       
       {/* Hero Section */}
-      <section className="relative px-6 md:px-12 max-w-[1440px] mx-auto text-center mb-32">
+      <section id="about-hero" className="relative px-6 md:px-12 max-w-[1440px] mx-auto text-center mb-32">
         <motion.p
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
@@ -41,7 +41,7 @@ export default function AboutPage() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="px-6 md:px-12 max-w-7xl mx-auto mb-32">
+      <section id="our-story" className="px-6 md:px-12 max-w-7xl mx-auto mb-32">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-24 items-center">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -75,7 +75,7 @@ export default function AboutPage() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-24 bg-white/5 border-y border-white/10 mb-32">
+      <section id="core-values" className="py-24 bg-white/5 border-y border-white/10 mb-32">
         <div className="px-6 md:px-12 max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-headline text-4xl font-bold text-silk-beige mb-4">Why Choose Hydra Spa?</h2>
@@ -117,7 +117,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="px-6 md:px-12 max-w-4xl mx-auto text-center">
+      <section id="visit-us-cta" className="px-6 md:px-12 max-w-4xl mx-auto text-center">
         <h2 className="font-headline text-3xl md:text-5xl font-bold text-silk-beige mb-6">Experience the Difference</h2>
         <p className="text-mist-silver mb-10 text-lg">Join us at Hydra Spa and discover why we are the preferred wellness sanctuary in Hyderabad.</p>
         <button

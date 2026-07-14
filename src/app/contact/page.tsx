@@ -22,7 +22,7 @@ export default function ContactPage() {
     <>
       <div className="pb-20 flex-grow">
         {/* Hero Title Section */}
-        <section className="max-w-[1440px] mx-auto px-6 md:px-20 mb-16 text-center">
+        <section id="contact-hero" className="max-w-[1440px] mx-auto px-6 md:px-20 mb-16 text-center">
           <h1 className="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-silk-beige mb-4 opacity-0 animate-[fadeIn_1s_ease-out_forwards]">
             Connect with <span className="text-gold-metallic italic">Tranquility</span>
           </h1>
@@ -32,7 +32,7 @@ export default function ContactPage() {
         </section>
 
         {/* Main Content: Split Layout */}
-        <section className="max-w-[1440px] mx-auto px-6 md:px-20 grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <section id="contact-form-section" className="max-w-[1440px] mx-auto px-6 md:px-20 grid grid-cols-1 lg:grid-cols-12 gap-12">
 
           {/* Contact Information (Left) */}
           <div className="lg:col-span-5 space-y-12">
