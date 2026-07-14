@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-obsidian-deep: #0D1117;
+  --color-gold-metallic: #D4AF37;
+  --color-silk-beige: #F8F5F0;
+  --color-mist-silver: #A8A8A8;
+  --color-charcoal-rich: #1A1A1A;
+  --color-surface-dim: #131411;
+  --color-surface-container-lowest: #0e0e0c;
+  --color-surface-container-low: #1c1c19;
+  --color-surface-container: #20201d;
+  --color-surface-container-high: #2a2a27;
+  --color-surface-container-highest: #353532;
+  
+  --font-headline: "Playfair Display", Georgia, serif;
+  --font-body: "Montserrat", system-ui, sans-serif;
+  --font-headline-lg: "Playfair Display", Georgia, serif;
+  --font-headline-md: "Playfair Display", Georgia, serif;
+  --font-body-md: "Montserrat", system-ui, sans-serif;
+  --font-display-lg: "Playfair Display", Georgia, serif;
+  --font-display-lg-mobile: "Playfair Display", Georgia, serif;
+  --font-label-caps: "Montserrat", system-ui, sans-serif;
+  --font-body-lg: "Montserrat", system-ui, sans-serif;
+
+  --spacing-gutter: 32px;
+  --spacing-container-max: 1440px;
+  --spacing-unit: 8px;
+  --spacing-margin-tablet: 40px;
+  --spacing-margin-desktop: 80px;
+  --spacing-margin-mobile: 24px;
+}
+
+@utility text-headline-lg { font-size: 40px; line-height: 48px; font-weight: 500; }
+@utility text-headline-md { font-size: 32px; line-height: 40px; font-weight: 500; }
+@utility text-body-md { font-size: 16px; line-height: 28px; letter-spacing: 0.03em; font-weight: 400; }
+@utility text-display-lg { font-size: 72px; line-height: 84px; letter-spacing: -0.02em; font-weight: 600; }
+@utility text-display-lg-mobile { font-size: 48px; line-height: 56px; letter-spacing: -0.01em; font-weight: 600; }
+@utility text-label-caps { font-size: 12px; line-height: 16px; letter-spacing: 0.2em; font-weight: 600; text-transform: uppercase; }
+@utility text-body-lg { font-size: 18px; line-height: 32px; letter-spacing: 0.05em; font-weight: 300; }
+
+/* Base style overrides */
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-obsidian-deep);
+  color: var(--color-silk-beige);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-headline);
+}
+
+/* Premium Custom Utilities */
+.glass-card {
+  background: rgba(26, 26, 26, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.03);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-btn-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%);
+}
+
+.luxury-shadow {
+  box-shadow: 0 40px 100px -20px rgba(0, 0, 0, 0.7);
+}
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scroll-reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Modern Luxury Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0D1117;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B38728;
+}
+

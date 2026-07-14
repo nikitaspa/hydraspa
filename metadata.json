@@ -1,0 +1,6 @@
+{
+  "name": "Hydra Spa",
+  "description": "Ultra-premium quiet luxury wellness spa in Gachibowli, Hyderabad, featuring bespoke Balinese, Swedish, and Aromatherapy treatments.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
