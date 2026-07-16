@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
-import Script from 'next/script';
+import { GoogleAnalytics } from '@next/third-parties/google';
 import '../index.css';
 import ClientLayoutWrapper from '../components/ClientLayoutWrapper';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://hydraspa.online'),
   title: {
     template: '%s | Hydra Spa',
     default: 'Hydra Spa | Luxury Gachibowli Hyderabad Spa',
@@ -15,11 +16,46 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Hydra Spa | Luxury Gachibowli Hyderabad Spa',
     description: 'Ultra-premium quiet luxury Gachibowli Hyderabad spa, featuring bespoke Balinese, Swedish, and Aromatherapy treatments.',
-    url: 'https://hydraspa.in',
+    url: 'https://hydraspa.online',
     siteName: 'Hydra Spa',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1024,
+        height: 1024,
+        alt: 'Premium Luxury Spa in Gachibowli',
+      },
+    ],
     locale: 'en_IN',
     type: 'website',
   },
+  alternates: {
+    canonical: 'https://hydraspa.online',
+  },
+};
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": ["Spa", "HealthAndBeautyBusiness", "LocalBusiness", "Organization"],
+  "name": "Hydra Spa",
+  "image": "https://hydraspa.online/og-image.png",
+  "url": "https://hydraspa.online",
+  "telephone": "+918999384340",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Gachibowli",
+    "addressLocality": "Hyderabad",
+    "addressRegion": "Telangana",
+    "addressCountry": "IN"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "opens": "00:00",
+      "closes": "23:59"
+    }
+  ],
 };
 
 export default function RootLayout({
@@ -30,27 +66,17 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body>
-        <Script
-          strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=G-0QCC6T1D8Q"
-        />
-        <Script
-          id="gtag-init"
-          strategy="afterInteractive"
+        <script
+          type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-
-              gtag('config', 'G-0QCC6T1D8Q');
-            `,
+            __html: JSON.stringify(schema),
           }}
         />
         <ClientLayoutWrapper>
           {children}
         </ClientLayoutWrapper>
       </body>
+      <GoogleAnalytics gaId="G-0QCC6T1D8Q" />
     </html>
   );
 }
