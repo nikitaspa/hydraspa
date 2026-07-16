@@ -829,21 +829,21 @@ export default function App() {
                 <MapPin className="text-gold-metallic shrink-0 mt-0.5" size={16} />
                 <div>
                   <p className="font-semibold text-silk-beige uppercase tracking-wider text-[10px]">Location Address</p>
-                  <p className="mt-1">Plot 45, Near Cyber Towers, Gachibowli, Hyderabad, Telangana 500032</p>
+                  <p className="mt-1">3rd Floor, Sri Tirumala Platinum,<br />Janardana Hills, Lumbini Avenue,<br />Gachibowli, Hyderabad, Telangana 500032</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <Phone className="text-gold-metallic shrink-0 mt-0.5" size={16} />
                 <div>
                   <p className="font-semibold text-silk-beige uppercase tracking-wider text-[10px]">Direct Call Desk</p>
-                  <p className="mt-1">+91 98765 43210 / +91 40 4567 8901</p>
+                  <p className="mt-1">+91 8999384340</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <Mail className="text-gold-metallic shrink-0 mt-0.5" size={16} />
                 <div>
                   <p className="font-semibold text-silk-beige uppercase tracking-wider text-[10px]">Email Correspondence</p>
-                  <p className="mt-1">concierge@hydraspa.in / reservations@hydraspa.in</p>
+                  <p className="mt-1">service@hydraspa.in</p>
                 </div>
               </div>
             </div>
