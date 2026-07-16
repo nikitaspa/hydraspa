@@ -5,15 +5,15 @@ import ClientLayoutWrapper from '../components/ClientLayoutWrapper';
 export const metadata: Metadata = {
   title: {
     template: '%s | Hydra Spa',
-    default: 'Hydra Spa | Luxury Wellness Sanctuary in Gachibowli',
+    default: 'Hydra Spa | Luxury Gachibowli Hyderabad Spa',
   },
-  description: 'Ultra-premium quiet luxury wellness spa in Gachibowli, Hyderabad, featuring bespoke Balinese, Swedish, and Aromatherapy treatments.',
+  description: 'Ultra-premium quiet luxury Gachibowli Hyderabad spa, featuring bespoke Balinese, Swedish, and Aromatherapy treatments.',
   icons: {
     icon: '/logo.jpg',
   },
   openGraph: {
-    title: 'Hydra Spa | Luxury Wellness Sanctuary in Gachibowli',
-    description: 'Ultra-premium quiet luxury wellness spa in Gachibowli, Hyderabad, featuring bespoke Balinese, Swedish, and Aromatherapy treatments.',
+    title: 'Hydra Spa | Luxury Gachibowli Hyderabad Spa',
+    description: 'Ultra-premium quiet luxury Gachibowli Hyderabad spa, featuring bespoke Balinese, Swedish, and Aromatherapy treatments.',
     url: 'https://hydraspa.in',
     siteName: 'Hydra Spa',
     locale: 'en_IN',

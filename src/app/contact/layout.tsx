@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Contact & Reservations | Hydra Spa Gachibowli',
-  description: 'Book your luxury spa experience today. Get in touch with the Hydra Spa concierge in Gachibowli, Hyderabad. Open 24 Hours.',
+  title: 'Contact & Reservations | Hydra Spa | Gachibowli Hyderabad Spa',
+  description: 'Book your luxury experience at our Gachibowli Hyderabad spa today. Get in touch with the Hydra Spa concierge. Open 24 Hours.',
 };
 
 export default function ContactLayout({

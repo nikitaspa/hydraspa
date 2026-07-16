@@ -88,13 +88,14 @@ export default function ContactPage() {
             </div>
 
             {/* Map Section */}
-            <div className="h-80 w-full overflow-hidden glass-card relative group">
-              <div className="absolute inset-0 z-10 bg-obsidian-deep/20 pointer-events-none group-hover:bg-transparent transition-all duration-500"></div>
-              <img className="w-full h-full object-cover map-grayscale" alt="Hyderabad Gachibowli Map" src="/images/optimized_v2_8.webp" />
-              <div className="absolute bottom-6 left-6 z-20 bg-gold-metallic text-obsidian-deep px-4 py-2 font-label-caps text-label-caps flex items-center space-x-2">
-                <span className="material-symbols-outlined text-[16px]">map</span>
-                <span>Open in Maps</span>
-              </div>
+            <div className="h-80 w-full overflow-hidden glass-card relative">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.501092773031!2d78.36432377665326!3d17.435714458788077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93a69f00a56f%3A0xd263d8178ca2dacd!2sHydra%20Spa!5e0!3m2!1sen!2sin!4v1784134818455!5m2!1sen!2sin" 
+                className="w-full h-full border-0 grayscale hover:grayscale-0 transition-all duration-700" 
+                allowFullScreen={false} 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
 

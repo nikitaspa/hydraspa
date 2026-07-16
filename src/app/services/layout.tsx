@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Premium Spa Services & Massages | Hydra Spa Gachibowli',
-  description: 'Explore our curated selection of luxury spa treatments. From our Signature Hydra Therapy to Deep Tissue Massages and Aromatherapy, experience ultimate rejuvenation.',
+  title: 'Premium Services at the Best Gachibowli Hyderabad Spa | Hydra Spa',
+  description: 'Explore curated luxury treatments at the premier Gachibowli Hyderabad spa. From our Signature Hydra Therapy to Deep Tissue Massages and Aromatherapy.',
 };
 
 export default function ServicesLayout({
