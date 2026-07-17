@@ -58,7 +58,7 @@ export default function ContactPage() {
                     <Mail className="text-gold-metallic" size={24} />
                     <div>
                       <p className="font-label-caps text-label-caps text-mist-silver mb-1">Email Inquiry</p>
-                      <p className="text-silk-beige">service@hydraspa.in</p>
+                      <p className="text-silk-beige">service@hydraspa.online</p>
                     </div>
                   </div>
                 </div>

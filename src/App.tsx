@@ -843,7 +843,7 @@ export default function App() {
                 <Mail className="text-gold-metallic shrink-0 mt-0.5" size={16} />
                 <div>
                   <p className="font-semibold text-silk-beige uppercase tracking-wider text-[10px]">Email Correspondence</p>
-                  <p className="mt-1">service@hydraspa.in</p>
+                  <p className="mt-1">service@hydraspa.online</p>
                 </div>
               </div>
             </div>

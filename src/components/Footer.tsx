@@ -29,7 +29,7 @@ export default function Footer() {
             </p>
             <p className="flex items-center gap-3 hover:text-gold-metallic transition-colors cursor-pointer">
               <Mail size={16} className="text-gold-metallic" />
-              <span>service@hydraspa.in</span>
+              <span>service@hydraspa.online</span>
             </p>
             <p className="flex items-start gap-3 hover:text-gold-metallic transition-colors">
               <MapPin size={16} className="text-gold-metallic flex-shrink-0 mt-1" />
